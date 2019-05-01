@@ -1,8 +1,7 @@
 import React from 'react';
 import { Typography, Button, Grid } from '@material-ui/core';
 import styled from 'styled-components';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Home from './Home';
+
 
 
 class Splash extends React.Component {
@@ -21,12 +20,8 @@ class Splash extends React.Component {
       `
 
     return (
-      <>
-      <Router>
-        <Route exact path='/home' Component={Home} />
-      </Router>
       <SplashContainer> 
-      <Grid style={{marginTop: '20px'}} container spacing={24}>
+      <Grid style={{marginTop: '200px'}} container spacing={24}>
         <Grid item xs={2}></Grid>
         <Grid item xs={8}>
       <Typography variant="h3" align="center">Welcome to my Website</Typography>
@@ -34,12 +29,11 @@ class Splash extends React.Component {
         <Grid item xs={2}></Grid>
         <Grid item xs={5}></Grid>
         <Grid item xs={2}>
-      <Button variant="outlined" color="secondary" size="large">Click Here to Enter</Button>
+      <Button variant="outlined" color="secondary" size="large" href='/home'>Click Here to Enter</Button>
         </Grid>
         <Grid item xs={5}></Grid>
       </Grid>
       </SplashContainer>
-      </>
     )
   }
 }

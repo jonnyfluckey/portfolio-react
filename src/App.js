@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import ResponsiveDrawer from './Components/Shared/ResponsiveDrawer';
 import BottomNavigation from './Components/Shared/BottomNavigation';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Splash from './Components/Splash';
 import { CssBaseline } from '@material-ui/core';
+import Home from './Components/Home';
+import NoMatch from './Components/NoMatch';
+import Roll from 'react-reveal/Roll';
 
 
 const theme = createMuiTheme({
@@ -33,7 +36,17 @@ class App extends Component {
       <MuiThemeProvider theme={theme}>
       <CssBaseline />
       <ResponsiveDrawer  />
-      <Splash />
+      <div>
+      <Router>
+        <Roll right>
+        <Switch>
+        <Route exact path='/' component={Splash} />
+        <Route exact path='/home' component={Home} />
+        <Route component={NoMatch} />
+        </Switch>
+        </Roll>  
+      </Router>
+      </div>
       <BottomNavigation />
       </MuiThemeProvider>
       </>
