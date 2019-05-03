@@ -8,7 +8,7 @@ import Splash from './Components/Splash';
 import { CssBaseline } from '@material-ui/core';
 import Home from './Components/Home';
 import NoMatch from './Components/NoMatch';
-import Roll from 'react-reveal/Roll';
+import Zoom from 'react-reveal/Zoom';
 
 
 const theme = createMuiTheme({
@@ -38,13 +38,13 @@ class App extends Component {
       <ResponsiveDrawer  />
       <div>
       <Router>
-        <Roll right>
+        <Zoom bottom>
         <Switch>
         <Route exact path='/' component={Splash} />
         <Route exact path='/home' component={Home} />
         <Route component={NoMatch} />
         </Switch>
-        </Roll>  
+        </Zoom>  
       </Router>
       </div>
       <BottomNavigation />
