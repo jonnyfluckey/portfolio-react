@@ -116,9 +116,9 @@ class PersistentDrawerLeft extends React.Component {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" color="inherit" noWrap>
-              Jonny Fluckey
-            </Typography>
+              {/* <Typography variant="h6" color="inherit" noWrap>
+                Jonny Fluckey
+              </Typography> */}
           </Toolbar>
         </AppBar>
         <Drawer

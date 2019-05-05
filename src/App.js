@@ -8,14 +8,13 @@ import Splash from './Components/Splash';
 import { CssBaseline } from '@material-ui/core';
 import Home from './Components/Home';
 import NoMatch from './Components/NoMatch';
-import Zoom from 'react-reveal/Zoom';
 
 
 const theme = createMuiTheme({
   palette: {
     primary: {
       light: '#6d6d6d',
-      main: '#424242',
+      main: '#181D26',
       dark: '#1b1b1b',
       contrastText: '#ffffff',
     },
@@ -38,13 +37,11 @@ class App extends Component {
       <ResponsiveDrawer  />
       <div>
       <Router>
-        <Zoom bottom>
         <Switch>
         <Route exact path='/' component={Splash} />
         <Route exact path='/home' component={Home} />
         <Route component={NoMatch} />
         </Switch>
-        </Zoom>  
       </Router>
       </div>
       <BottomNavigation />

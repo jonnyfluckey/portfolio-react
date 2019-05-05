@@ -37,7 +37,7 @@ class SimpleBottomNavigation extends React.Component {
         className={classes.root}
       >
         <BottomNavigationAction label="About Me" icon={<PersonIcon />} />
-        <BottomNavigationAction label="Dev Tools" icon={<DesktopMacIcon />} />
+        <BottomNavigationAction label="Projects" icon={<DesktopMacIcon />} />
         <BottomNavigationAction label="Contact Info" icon={<ContactMailIcon />} />
       </BottomNavigation>
     );
