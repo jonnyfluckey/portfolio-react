@@ -7,6 +7,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Splash from './Components/Splash';
 import { CssBaseline } from '@material-ui/core';
 import Home from './Components/Home';
+import Contact from './Components/Contact';
 import NoMatch from './Components/NoMatch';
 
 
@@ -34,17 +35,18 @@ class App extends Component {
       <>
       <MuiThemeProvider theme={theme}>
       <CssBaseline />
-      <ResponsiveDrawer  />
-      <div>
       <Router>
+      <div>
+      <ResponsiveDrawer  />
         <Switch>
         <Route exact path='/' component={Splash} />
         <Route exact path='/home' component={Home} />
+        <Route exact path='/contact' component={Contact} />
         <Route component={NoMatch} />
         </Switch>
-      </Router>
-      </div>
       <BottomNavigation />
+      </div>
+      </Router>
       </MuiThemeProvider>
       </>
     );

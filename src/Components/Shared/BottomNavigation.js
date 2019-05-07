@@ -6,6 +6,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import PersonIcon from '@material-ui/icons/Person';
 import DesktopMacIcon from '@material-ui/icons/DesktopMac';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
+import {Link} from 'react-router-dom';
 
 const styles = {
   root: {
@@ -30,6 +31,7 @@ class SimpleBottomNavigation extends React.Component {
     const { value } = this.state;
 
     return (
+      
       <BottomNavigation
         value={value}
         onChange={this.handleChange}
@@ -38,7 +40,9 @@ class SimpleBottomNavigation extends React.Component {
       >
         <BottomNavigationAction label="About Me" icon={<PersonIcon />} />
         <BottomNavigationAction label="Projects" icon={<DesktopMacIcon />} />
+        <Link to='/contact' title="Contact Info">
         <BottomNavigationAction label="Contact Info" icon={<ContactMailIcon />} />
+        </Link>
       </BottomNavigation>
     );
   }
