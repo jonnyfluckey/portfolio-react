@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import Image from '../Images/JFProfile.jpg';
 import Image2 from '../Images/Family.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Divider from '@material-ui/core/Divider'
-
+import Divider from '../Images/divider.svg';
+import Arrow from '@material-ui/icons/ArrowDownward';
 
 
 class Home extends Component {
@@ -54,8 +54,20 @@ render() {
         </Typography>
         </ScrollAnimation>  
         </Grid>
-        <Divider />
-        <Grid item xs={4} align='center' style={{marginTop: '250px'}}>
+        <div>
+          <a href='#next' style={{float: 'right', position: 'fixed', bottom: '5em', right: '10em', textDecoration: 'none'}}>
+          <ScrollAnimation animateIn='bounce'>
+          <Arrow color='primary' /> 
+          <Typography variant='body1'>
+          Click to Continue
+          </Typography>
+          </ScrollAnimation>
+          </a>
+        </div>
+        <Grid item xs={12} align='center'>
+        <img src={Divider} />
+        </Grid>
+        <Grid item xs={4} align='center' style={{marginTop: '250px'}} id="next">
         <ScrollAnimation animateIn='zoomInUp' animateOut='zoomOutDown'>
         <img src='https://upload.wikimedia.org/wikipedia/commons/6/65/Utah_Jazz_wordmark_logo_primary_color.png' alt='Utah Jazz Logo' height='65%' width='65%' />
         </ScrollAnimation>
@@ -83,6 +95,9 @@ render() {
         <ScrollAnimation animateIn='zoomInUp' animateOut='zoomOutDown'>
         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Colorado_Rockies_logo.svg/851px-Colorado_Rockies_logo.svg.png' alt='Colorado Rockies Logo' height='25%' width='25%' />
         </ScrollAnimation>
+        </Grid>
+        <Grid item xs={12} align='center'>
+        <img src={Divider} />
         </Grid>
         <Grid item xs={4} style={{marginTop: '200px'}} align='center'>
         <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
@@ -113,10 +128,13 @@ render() {
         <img src='http://pngimg.com/uploads/batman/batman_PNG47.png' alt='batmanlogo' height='25%' width='25%' />
         </ScrollAnimation>
         </Grid>
+        <Grid item xs={12} align='center'>
+        <img src={Divider} />
+        </Grid>
+        {/* <br></br>
         <br></br>
-        <br></br>
-        <br></br>
-        <Grid item xs={12} style={{marginTop: '325px'}} align='center'>
+        <br></br> */}
+        <Grid item xs={12} style={{marginTop: '200px'}} align='center'>
         <ScrollAnimation animateIn='rollIn' animateOut='rollOut'>
         <Typography variant='h4'>
         Developer Tools I build with

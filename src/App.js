@@ -44,7 +44,7 @@ class App extends Component {
         <Route exact path='/contact' component={Contact} />
         <Route component={NoMatch} />
         </Switch>
-      <BottomNavigation />
+      {/* <BottomNavigation /> */}
       </div>
       </Router>
       </MuiThemeProvider>

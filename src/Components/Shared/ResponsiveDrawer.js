@@ -16,8 +16,11 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import FaceIcon from '@material-ui/icons/Face';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+import PieChartIcon from '@material-ui/icons/PieChart';
+import PublicIcon from '@material-ui/icons/Public';
+import {Link} from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -137,21 +140,38 @@ class PersistentDrawerLeft extends React.Component {
           </div>
           <Divider />
           <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                <ListItemText primary={text} />
+              <Link to='/home' style={{textDecoration: 'none'}}>
+              <ListItem button key='About Me'>
+                <ListItemIcon>
+                  <FaceIcon />
+                </ListItemIcon>
+                <ListItemText primary='About Me' />
               </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {['All mail', 'Trash', 'Spam'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                <ListItemText primary={text} />
+              </Link>
+              <Link to='/projects' style={{textDecoration: 'none'}}>
+              <ListItem button key='Projects'>
+                <ListItemIcon>
+                  <PieChartIcon />
+                </ListItemIcon>
+                <ListItemText primary='Projects' />
               </ListItem>
-            ))}
+              </Link>
+              <Link to='/blog' style={{textDecoration: 'none'}}>
+              <ListItem button key='Blog'>
+                <ListItemIcon>
+                  <PublicIcon />
+                </ListItemIcon>
+                <ListItemText primary='Blog' />
+              </ListItem>
+              </Link>
+              <Link to='/contact' style={{textDecoration: 'none'}}>
+              <ListItem button key='Contact Me'>
+                <ListItemIcon>
+                  <ContactMailIcon />
+                </ListItemIcon>
+                <ListItemText primary='Contact Me' />
+              </ListItem> 
+              </Link>         
           </List>
         </Drawer>
         {/* <main
