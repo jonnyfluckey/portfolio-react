@@ -6,6 +6,7 @@ import Image2 from '../Images/Family.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Divider from '../Images/divider.svg';
 import Arrow from '@material-ui/icons/ArrowDownward';
+import Footer from './Shared/Footer'; 
 
 
 class Home extends Component {
@@ -29,11 +30,13 @@ render() {
       border-left-color: #656773;
       border-right-width: 75px;
       border-right-color: #656773;
+      position: relative;
       `
 
 
 
   return (
+    <>
     <HomeContainer>
       <Grid style={{marginTop: '100px'}} 
       container 
@@ -166,6 +169,8 @@ render() {
         </Grid>
       </Grid>
     </HomeContainer>
+    <Footer />
+    </>
   )
 }
 }
