@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Typography, Grid } from '@material-ui/core';
+import { Typography, Grid, Paper } from '@material-ui/core';
 import styled from 'styled-components';
 import Image from '../Images/JFProfile.jpg';
 import Image2 from '../Images/Family.jpg';
@@ -57,7 +57,7 @@ render() {
         </Typography>
         </ScrollAnimation>  
         </Grid>
-        <div>
+        {/* <div>
           <a href='#next' style={{float: 'right', position: 'fixed', bottom: '5em', right: '10em', textDecoration: 'none'}}>
           <ScrollAnimation animateIn='bounce'>
           <Arrow color='primary' /> 
@@ -66,7 +66,7 @@ render() {
           </Typography>
           </ScrollAnimation>
           </a>
-        </div>
+        </div> */}
         <Grid item xs={12} align='center'>
         <img src={Divider} />
         </Grid>
@@ -166,6 +166,19 @@ render() {
         <ScrollAnimation animateIn='rotateIn' animateOut='rotateOut' delay={4000}>
         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Mac_OS_wordmark_logo.svg/2500px-Mac_OS_wordmark_logo.svg.png' alt='macos logo' height='80%' width='80%' />
         </ScrollAnimation>
+        </Grid>
+        <Grid item xs={12} style={{marginTop: '200px'}} align='center'>
+        <Typography variant='h4'>Other developer tools I'm familiar with</Typography>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Paper elevation={4} style={{width: '750px'}}>
+          <Typography variant='h5'>
+            HTML
+            <br></br>
+            CSS
+          </Typography>
+        </Paper>
         </Grid>
       </Grid>
     </HomeContainer>

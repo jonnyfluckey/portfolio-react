@@ -7,6 +7,7 @@ import LinkedInIcon from '../Images/LinkedIn.png';
 import GithubIcon from '../Images/Github.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom';
+import Footer from './Shared/Footer';
 
 
 const HomeContainer = styled.div`
@@ -22,10 +23,12 @@ const HomeContainer = styled.div`
       border-left-color: #656773;
       border-right-width: 75px;
       border-right-color: #656773;
+      position: relative;
       `
 
 const Contact= () => (
 
+<>
 <HomeContainer>
   <Typography variant='h4' align='center' style={{marginTop: '100px'}}>Contact Jonny through the following channels:</Typography>
   <br></br>
@@ -72,6 +75,8 @@ const Contact= () => (
   </Grid>
 
 </HomeContainer>
+<Footer />
+</>
 
 )
 

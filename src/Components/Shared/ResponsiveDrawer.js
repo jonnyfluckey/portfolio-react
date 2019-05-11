@@ -21,6 +21,7 @@ import ContactMailIcon from '@material-ui/icons/ContactMail';
 import PieChartIcon from '@material-ui/icons/PieChart';
 import PublicIcon from '@material-ui/icons/Public';
 import {Link} from 'react-router-dom';
+import Logo from '../../Images/Github.png';
 
 const drawerWidth = 240;
 
@@ -119,9 +120,13 @@ class PersistentDrawerLeft extends React.Component {
             >
               <MenuIcon />
             </IconButton>
-              {/* <Typography variant="h6" color="inherit" noWrap>
-                Jonny Fluckey
-              </Typography> */}
+              <Typography variant="h6" color="inherit" noWrap style={{marginInlineStart: '80%'}}>
+                Site Source Code
+              </Typography>
+              &nbsp;&nbsp;&nbsp;
+              <Link to='///www.github.com/jonnyfluckey/portfolio-react' target='_blank'>
+              <img src={Logo} height='25px' width='25px' style={{backgroundColor: 'white', borderRadius: '100%'}} />
+              </Link>
           </Toolbar>
         </AppBar>
         <Drawer
