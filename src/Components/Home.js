@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Typography, Grid, Paper } from '@material-ui/core';
+import { Typography, Grid, Paper, Table, TableBody, TableRow, TableCell } from '@material-ui/core';
 import styled from 'styled-components';
 import Image from '../Images/JFProfile.jpg';
 import Image2 from '../Images/Family.jpg';
@@ -168,19 +168,111 @@ render() {
         </ScrollAnimation>
         </Grid>
         <Grid item xs={12} style={{marginTop: '200px'}} align='center'>
+        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
         <Typography variant='h4'>Other developer tools I'm familiar with</Typography>
         <br></br>
         <br></br>
         <br></br>
         <Paper elevation={4} style={{width: '750px'}}>
-          <Typography variant='h5'>
-            HTML
-            <br></br>
-            CSS
-          </Typography>
+          <Table>
+            <TableBody>
+              <TableRow>
+                <TableCell>
+                <Typography variant='h6' align='center'>HTML</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>CSS</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>Javascript</Typography>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                <Typography variant='h6' align='center'>SQL</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>Command Line</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>jQuery</Typography>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                <Typography variant='h6' align='center'>ES6</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>Redux</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>Flux</Typography>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                <Typography variant='h6' align='center'>Node.js</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>MongoDB</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>VSCode</Typography>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                <Typography variant='h6' align='center'>Bootstrap</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>Semantic-UI</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>Material-UI</Typography>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                <Typography variant='h6' align='center'>Heroku</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>Netlify</Typography>
+                </TableCell>
+                <TableCell>
+                <Typography variant='h6' align='center'>Azure</Typography>
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
         </Paper>
+        </ScrollAnimation>
         </Grid>
-      </Grid>
+        <ScrollAnimation animateIn='fadeIn' >
+        <Grid item xs={12} style={{marginTop: '200px'}}>
+          <Typography variant='h4' align='center'>Want to know more?</Typography>
+          <br></br>
+          <br></br>
+          <Typography variant='h4' align='center'>Explore these areas to discover more about Jonny</Typography>
+        </Grid>
+        </ScrollAnimation>
+        <br></br>
+        <Grid item xs={4} style={{marginTop: '100px'}} align='center'>
+        <ScrollAnimation animateIn='bounceInRight'>
+          <Typography variant='h6'>Projects</Typography>
+          </ScrollAnimation>
+        </Grid>
+        <Grid item xs={4} style={{marginTop: '100px'}} align='center'>
+        <ScrollAnimation animateIn='bounceInUp'>
+          <Typography variant='h6'>Blog</Typography>
+          </ScrollAnimation>
+        </Grid>
+        <Grid item xs={4} style={{marginTop: '100px'}} align='center'>
+        <ScrollAnimation animateIn='bounceInLeft'>
+          <Typography variant='h6'>Contact Me</Typography>
+          </ScrollAnimation>
+        </Grid>
+        
+        </Grid>
     </HomeContainer>
     <Footer />
     </>
