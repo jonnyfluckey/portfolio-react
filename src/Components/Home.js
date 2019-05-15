@@ -7,6 +7,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Divider from '../Images/divider.svg';
 import Arrow from '@material-ui/icons/ArrowDownward';
 import Footer from './Shared/Footer'; 
+import WhatsHot  from '@material-ui/icons/Whatshot';
+import Public from '@material-ui/icons/Public';
+import PhoneInTalk from '@material-ui/icons/PhoneInTalk';
+import {Link} from 'react-router-dom';
 
 
 class Home extends Component {
@@ -258,17 +262,26 @@ render() {
         <br></br>
         <Grid item xs={4} style={{marginTop: '100px'}} align='center'>
         <ScrollAnimation animateIn='bounceInRight'>
+          <Link to='/projects' style={{textDecoration: 'none'}}>
+          <WhatsHot />
           <Typography variant='h6'>Projects</Typography>
+          </Link>
           </ScrollAnimation>
         </Grid>
         <Grid item xs={4} style={{marginTop: '100px'}} align='center'>
         <ScrollAnimation animateIn='bounceInUp'>
+        <Link to='/blog' style={{textDecoration: 'none'}}>
+          <Public />
           <Typography variant='h6'>Blog</Typography>
+          </Link>
           </ScrollAnimation>
         </Grid>
         <Grid item xs={4} style={{marginTop: '100px'}} align='center'>
         <ScrollAnimation animateIn='bounceInLeft'>
+        <Link to='/contact' style={{textDecoration: 'none'}}>
+          <PhoneInTalk />
           <Typography variant='h6'>Contact Me</Typography>
+          </Link>
           </ScrollAnimation>
         </Grid>
         
