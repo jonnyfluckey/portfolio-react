@@ -3,6 +3,7 @@ import { Typography, Button, Grid, GridList } from '@material-ui/core';
 import styled from 'styled-components';
 import Image from '../Images/JFProfile.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { Link } from 'react-router-dom'
 
 
 class Splash extends React.Component {
@@ -26,7 +27,9 @@ class Splash extends React.Component {
       <GridList cols={1} style={{marginTop: '15%', marginLeft: '45%'}} cellHeight='100px'>
         <ScrollAnimation animateIn='lightSpeedIn'>
         <Typography variant="h3" direction='row'>Hi, I'm Jonny Fluckey</Typography>
-        <Button variant="outlined" color="primary" size="large" href='/home' style={{width: '200px', marginTop: '25px', marginLeft: '15%'}}>Learn More</Button>
+        <Link to='/home' style={{textDecoration: 'none'}}>
+        <Button variant="outlined" color="primary" size="large" style={{width: '200px', marginTop: '25px', marginLeft: '15%'}}>Learn More</Button>
+        </Link>
         </ScrollAnimation>
       </GridList>
         
