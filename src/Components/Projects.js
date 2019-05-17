@@ -8,6 +8,10 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import styled from 'styled-components';
 import Footer from './Shared/Footer';
+import MunchTime from '../Images/MunchTime.png';
+import uToob1 from '../Images/uToob-Home.png';
+import uToob2 from '../Images/uToob-Detail.png';
+import {Link} from 'react-router-dom';
 
 const styles = theme => ({
   root: {
@@ -66,9 +70,29 @@ class ControlledExpansionPanels extends React.Component {
             <Typography className={classes.heading}>React</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
-              Coming Soon....
+            <img src={MunchTime} height='40%' width='40%' />
+            <div style={{marginLeft: '5%'}}>
+            <Typography variant='h6'>
+              MunchTime
             </Typography>
+            <br></br>
+            <br></br>
+            <Typography variant='body1'>
+            A group order application I worked on with a team of 5 people for our final project at DevPoint Labs
+            </Typography>
+            <br></br>
+            <br></br>
+            <Link to='///itsmunchtime.herokuapp.com/login' target='_blank'>
+            Live Demo
+            </Link>
+            &nbsp;
+            &nbsp;
+            <Typography variant='body1'>UN: admin@itsmunchtime.com, PW: password</Typography>
+            <br></br>
+            <Link to='///github.com/ejohns11-2019/ItsMunchTime' target='_blank'>
+            Github Code Base
+            </Link>
+            </div>
           </ExpansionPanelDetails>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel2'} onChange={this.handleChange('panel2')}>
@@ -76,9 +100,18 @@ class ControlledExpansionPanels extends React.Component {
             <Typography className={classes.heading}>Ruby on Rails</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
+            {/* <div style={{width: '40%'}}>
+            <img src={uToob1} height='40%' width='40%' />
+            <br></br>
+            <br></br>
+            <br></br>
+            <img src={uToob2} height='40%' width='40%' />
+            </div>
+            <div style={{marginLeft: '5%'}}>
             <Typography>
               Coming Soon....
             </Typography>
+            </div> */}
           </ExpansionPanelDetails>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
