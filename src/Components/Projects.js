@@ -64,10 +64,10 @@ class ControlledExpansionPanels extends React.Component {
     return (
       <div className={classes.root}>
       <HomeContainer>
-        <Typography variant='h1' align='center' style={{marginTop: '100px'}}>My List of Projects</Typography>
+        <Typography variant='h2' align='center' style={{marginTop: '100px'}}>My List of Projects</Typography>
         <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')} style={{marginTop: '100px'}}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>React</Typography>
+            <Typography className={classes.heading}>React w/ Ruby on Rails</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <img src={MunchTime} height='40%' width='40%' />
@@ -100,18 +100,22 @@ class ControlledExpansionPanels extends React.Component {
             <Typography className={classes.heading}>Ruby on Rails</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            {/* <div style={{width: '40%'}}>
-            <img src={uToob1} height='40%' width='40%' />
-            <br></br>
-            <br></br>
-            <br></br>
-            <img src={uToob2} height='40%' width='40%' />
-            </div>
-            <div style={{marginLeft: '5%'}}>
-            <Typography>
-              Coming Soon....
+            <div style={{width: '50%'}}>
+            <Typography variant='h6'>
+              uToob
             </Typography>
-            </div> */}
+            <br></br>
+            <br></br>
+            <Typography variant='body1'>
+            A YouTube clone built during the Ruby on Rails Hack-a-Thon at DevPoint Labs. Our team of 4 took First Place in the competition!
+            </Typography>
+            <br></br>
+            <br></br>
+            <Link to='///github.com/jonnyfluckey/utoob' target='_blank'>
+            Github Code Base
+            </Link>
+            </div>
+            <img src={uToob1} height='40%' width='40%' style={{marginLeft: '5%'}} />
           </ExpansionPanelDetails>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>

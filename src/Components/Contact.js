@@ -30,7 +30,7 @@ const Contact= () => (
 
 <>
 <HomeContainer>
-  <Typography variant='h4' align='center' style={{marginTop: '100px'}}>Contact Jonny through the following channels:</Typography>
+  <Typography variant='h2' align='center' style={{marginTop: '100px'}}>Contact Jonny through the following channels:</Typography>
   <br></br>
   <br></br>
   <Grid style={{marginTop: '100px'}} 

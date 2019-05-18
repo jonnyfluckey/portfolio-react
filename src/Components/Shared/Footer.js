@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import ReactPic from '../../Images/React.png';
 import MaterialLogo from '../../Images/Material-UI.png';
-
+import Stencil from '../../Images/StencilImage.png';
 
 
 const Footer =  () => (
@@ -37,7 +37,7 @@ const Footer =  () => (
     </Grid>
     <Grid item xs={2} style={{borderLeft: '4px solid white', height: '200px'}}></Grid>
     <Grid item xs={5}>
-    <Typography variant='h6' style={{color: 'white'}}>Best of the Web:</Typography>
+    <img src={Stencil} height='80%' width='50%' />
     </Grid>
  
     </Grid>

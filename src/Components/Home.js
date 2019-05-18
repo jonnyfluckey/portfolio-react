@@ -49,6 +49,11 @@ render() {
       justify='center'
       alignItems='center'
       >
+        <Grid item xs={12} style={{marginBottom: '50px'}}>
+        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
+        <Typography variant='h2' align='center'>About Me</Typography>
+        </ScrollAnimation>
+        </Grid>
         <Grid item xs={6}>
         <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
         <img src={Image2} height='75%' width='75%' alt='Family' style={{borderRadius: '20%'}}/>
@@ -251,18 +256,18 @@ render() {
         </Paper>
         </ScrollAnimation>
         </Grid>
-        <ScrollAnimation animateIn='fadeIn' >
         <Grid item xs={12} style={{marginTop: '200px'}}>
+        <ScrollAnimation animateIn='fadeIn' >
           <Typography variant='h4' align='center'>Want to know more?</Typography>
           <br></br>
           <br></br>
           <Typography variant='h4' align='center'>Explore these areas to discover more about Jonny</Typography>
-        </Grid>
         </ScrollAnimation>
+        </Grid>
         <br></br>
         <Grid item xs={4} style={{marginTop: '100px'}} align='center'>
         <ScrollAnimation animateIn='bounceInRight'>
-          <Link to='/projects' style={{textDecoration: 'none'}}>
+          <Link to='/projects' style={{textDecoration: 'none', color: 'black'}}>
           <WhatsHot />
           <Typography variant='h6'>Projects</Typography>
           </Link>
@@ -270,7 +275,7 @@ render() {
         </Grid>
         <Grid item xs={4} style={{marginTop: '100px'}} align='center'>
         <ScrollAnimation animateIn='bounceInUp'>
-        <Link to='/blog' style={{textDecoration: 'none'}}>
+        <Link to='/blog' style={{textDecoration: 'none', color: 'black'}}>
           <Public />
           <Typography variant='h6'>Blog</Typography>
           </Link>
@@ -278,7 +283,7 @@ render() {
         </Grid>
         <Grid item xs={4} style={{marginTop: '100px'}} align='center'>
         <ScrollAnimation animateIn='bounceInLeft'>
-        <Link to='/contact' style={{textDecoration: 'none'}}>
+        <Link to='/contact' style={{textDecoration: 'none', color: 'black'}}>
           <PhoneInTalk />
           <Typography variant='h6'>Contact Me</Typography>
           </Link>

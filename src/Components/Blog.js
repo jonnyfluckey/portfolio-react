@@ -26,7 +26,7 @@ class Blog extends Component {
     return (
       <>
       <HomeContainer>
-        <Typography variant='h1' align='center' style={{marginTop: '100px', paddingBottom: '200px'}}>Coming Soon....</Typography>
+        <Typography variant='h2' align='center' style={{marginTop: '100px', paddingBottom: '200px'}}>Coming Soon....</Typography>
       </HomeContainer>
       <Footer />
       </>
