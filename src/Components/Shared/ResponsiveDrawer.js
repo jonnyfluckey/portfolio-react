@@ -148,7 +148,7 @@ class PersistentDrawerLeft extends React.Component {
           <Divider />
           <List>
               <Link to='/home' style={{textDecoration: 'none'}}>
-              <ListItem button key='About Me'>
+              <ListItem button key='About Me' onClick={this.handleDrawerClose}>
                 <ListItemIcon>
                   <FaceIcon />
                 </ListItemIcon>
@@ -156,7 +156,7 @@ class PersistentDrawerLeft extends React.Component {
               </ListItem>
               </Link>
               <Link to='/projects' style={{textDecoration: 'none'}}>
-              <ListItem button key='Projects'>
+              <ListItem button key='Projects' onClick={this.handleDrawerClose}>
                 <ListItemIcon>
                   <PieChartIcon />
                 </ListItemIcon>
@@ -164,7 +164,7 @@ class PersistentDrawerLeft extends React.Component {
               </ListItem>
               </Link>
               <Link to='/blog' style={{textDecoration: 'none'}}>
-              <ListItem button key='Blog'>
+              <ListItem button key='Blog' onClick={this.handleDrawerClose}>
                 <ListItemIcon>
                   <PublicIcon />
                 </ListItemIcon>
@@ -172,7 +172,7 @@ class PersistentDrawerLeft extends React.Component {
               </ListItem>
               </Link>
               <Link to='/contact' style={{textDecoration: 'none'}}>
-              <ListItem button key='Contact Me'>
+              <ListItem button key='Contact Me' onClick={this.handleDrawerClose}>
                 <ListItemIcon>
                   <ContactMailIcon />
                 </ListItemIcon>
