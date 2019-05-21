@@ -54,9 +54,9 @@ class ControlledExpansionPanels extends React.Component {
       position: absolute;
       padding-bottom: 100px;
       border-style: solid;
-      border-left-width: 75px;
+      border-left-width: ;
       border-left-color: #656773;
-      border-right-width: 75px;
+      border-right-width: ;
       border-right-color: #656773;
       position: relative;
       `
