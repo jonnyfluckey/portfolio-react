@@ -8,7 +8,7 @@ import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMe
 
 
 export default function Splash() {
-  const screenSize = useMediaQuery('(min-width:600px)');
+  const screenSize = useMediaQuery('(min-width:800px)');
 
 
 // class Splash extends React.Component {

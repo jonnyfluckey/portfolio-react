@@ -16,7 +16,7 @@ import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMe
 
 
 export default function Home() {
-  const screenSize = useMediaQuery('(min-width:600px)');
+  const screenSize = useMediaQuery('(min-width:800px)');
 
 
 
