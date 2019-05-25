@@ -11,6 +11,7 @@ import Contact from './Components/Contact';
 import Projects from './Components/Projects';
 import Blog from './Components/Blog';
 import NoMatch from './Components/NoMatch';
+import BlogPost from './Components/BlogPost';
 
 
 const theme = createMuiTheme({
@@ -46,6 +47,8 @@ class App extends Component {
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/projects' component={Projects} />
         <Route exact path='/blog' component={Blog} />
+        <Route path='/blog/:page' exact component={Blog} />
+        <Route path='/blog/posts/:post' component={BlogPost} />
         <Route component={NoMatch} />
         </Switch>
       {/* <BottomNavigation /> */}
