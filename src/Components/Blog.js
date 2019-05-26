@@ -32,7 +32,7 @@ async componentDidMount () {
   const { match } = this.props
   let page = match.params.page || 1
 
-  const resp = await butter.post.list({ page: page, page_size: 10 })
+  const resp = await butter.post.list({ page: page, page_size: 5 })
   this.setState(resp.data)
 }
 render () {
@@ -66,7 +66,15 @@ render () {
       {this.state.data.map((post, key) => {
         return (
           <div key={key}>
-            <Link to={`/blog/posts/${post.slug}`}>{post.title}</Link>
+            <img src={post.featured_image} alt='Post Featured Image' height='300px' width='500px' />
+            <br></br>
+            <Link to={`/blog/posts/${post.slug}`} style={{textDecoration: 'none'}}><Typography variant='headline'>{post.title}</Typography></Link>
+            <Typography variant='subheading'>By: {post.author.first_name}</Typography>
+            <br></br>
+            <Typography variant='body1' dangerouslySetInnerHTML={{ __html: post.body }} style={{height: '200px', witdh: '500px', textOverflow: 'ellipsis', overflow: 'hidden'}}/>
+            <br></br>
+            <br></br>
+            <Link to={`/blog/posts/${post.slug}`} style={{textDecoration: 'none'}}><Typography variant='h6' style={{borderBottom: '4px solid black', paddingBottom: '25px'}}>Click Here to Continue Reading...</Typography></Link>
           </div>
         )
       })}

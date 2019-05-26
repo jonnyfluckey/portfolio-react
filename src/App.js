@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ReactGA from 'react-ga';
 import {BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import ResponsiveDrawer from './Components/Shared/ResponsiveDrawer';
 import BottomNavigation from './Components/Shared/BottomNavigation';
@@ -33,6 +34,12 @@ const theme = createMuiTheme({
 
 
 class App extends Component {
+
+initializeReactGA = () => {
+    ReactGA.initialize('UA-140679342-1');
+    ReactGA.pageview('/homepage');
+}
+
   render() {
     return (
       <>
