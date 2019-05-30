@@ -16,7 +16,7 @@ export default function Footer() {
     return (
   <footer style={{
     position: 'absolute', 
-    height: '300px',
+    height: '350px',
     width: '100%',
     backgroundColor: '#181D26',
     paddingRight: '5%',
@@ -39,6 +39,9 @@ export default function Footer() {
     <br></br>
     <br></br>
     Styled with Material-UI &nbsp; &nbsp; <img src={MaterialLogo} width='5%' height='5%' style={{float: 'inline-start'}}/>
+    <br></br>
+    <br></br>
+    Blog Powered by: &nbsp; &nbsp; <img src='https://cdn.buttercms.com/RyJ7UhcVTCRqrCFXwgCo' width='25%' height='25%' style={{float: 'inline-start'}}/>
     </Typography>
     </Grid>
     <Grid item xs={2} style={{borderLeft: '4px solid white', height: '200px'}}></Grid>
@@ -53,7 +56,7 @@ export default function Footer() {
       return (
         <footer style={{
           position: 'absolute', 
-          height: '300px',
+          height: '350px',
           width: '100%',
           backgroundColor: '#181D26',
           paddingRight: '5%',
@@ -76,6 +79,9 @@ export default function Footer() {
           <br></br>
           <br></br>
           Styled with Material-UI &nbsp; &nbsp; <img src={MaterialLogo} width='5%' height='5%' style={{float: 'inline-start'}}/>
+          <br></br>
+          <br></br>
+          Blog Powered by: &nbsp; &nbsp; <img src='https://cdn.buttercms.com/RyJ7UhcVTCRqrCFXwgCo' width='25%' height='25%' style={{float: 'inline-start'}}/>
           </Typography>
           </Grid>
           {/* <Grid item xs={2} style={{borderLeft: '4px solid white', height: '200px'}}></Grid>
