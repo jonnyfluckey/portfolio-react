@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ReactGA from 'react-ga';
 import {BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import ResponsiveDrawer from './Components/Shared/ResponsiveDrawer';
 import BottomNavigation from './Components/Shared/BottomNavigation';
@@ -11,6 +12,7 @@ import Contact from './Components/Contact';
 import Projects from './Components/Projects';
 import Blog from './Components/Blog';
 import NoMatch from './Components/NoMatch';
+import BlogPost from './Components/BlogPost';
 
 
 const theme = createMuiTheme({
@@ -32,6 +34,12 @@ const theme = createMuiTheme({
 
 
 class App extends Component {
+
+initializeReactGA = () => {
+    ReactGA.initialize('UA-140679342-1');
+    ReactGA.pageview('/homepage');
+}
+
   render() {
     return (
       <>
@@ -46,6 +54,8 @@ class App extends Component {
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/projects' component={Projects} />
         <Route exact path='/blog' component={Blog} />
+        <Route path='/blog/:page' exact component={Blog} />
+        <Route path='/blog/posts/:post' component={BlogPost} />
         <Route component={NoMatch} />
         </Switch>
       {/* <BottomNavigation /> */}
