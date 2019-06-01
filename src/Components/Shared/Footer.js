@@ -27,9 +27,9 @@ export default function Footer() {
     <Grid 
     container
     spacing={24}
-    alignContent='left'
-    justify='left'
-    alignItems='left'
+    // alignContent='left'
+    // justify='left'
+    // alignItems='left'
     >
     <Grid item xs={5}>
     <Typography variant='h6' style={{color: 'white'}}>&#9400;2019 Jonny Fluckey
@@ -67,9 +67,9 @@ export default function Footer() {
           <Grid 
           container
           spacing={24}
-          alignContent='left'
-          justify='left'
-          alignItems='left'
+          // alignContent='left'
+          // justify='left'
+          // alignItems='left'
           >
           <Grid item xs={12}>
           <Typography variant='h6' style={{color: 'white'}}>&#9400;2019 Jonny Fluckey
