@@ -35,13 +35,13 @@ export default function Footer() {
     <Typography variant='h6' style={{color: 'white'}}>&#9400;2019 Jonny Fluckey
     <br></br>
     <br></br>
-    Built with React <img src={ReactPic} width='10%' height='10%' style={{float: 'inline-start'}} />
+    Built with React <img src={ReactPic} width='10%' height='10%' style={{float: 'unset'}} />
     <br></br>
     <br></br>
-    Styled with Material-UI &nbsp; &nbsp; <img src={MaterialLogo} width='5%' height='5%' style={{float: 'inline-start'}}/>
+    Styled with Material-UI &nbsp; &nbsp; <img src={MaterialLogo} width='5%' height='5%' style={{float: 'unset'}}/>
     <br></br>
     <br></br>
-    Blog Powered by: &nbsp; &nbsp; <img src='https://cdn.buttercms.com/RyJ7UhcVTCRqrCFXwgCo' width='25%' height='25%' style={{float: 'inline-start'}}/>
+    Blog Powered by: &nbsp; &nbsp; <img src='https://cdn.buttercms.com/RyJ7UhcVTCRqrCFXwgCo' width='25%' height='25%' style={{float: 'unset'}}/>
     </Typography>
     </Grid>
     <Grid item xs={2} style={{borderLeft: '4px solid white', height: '200px'}}></Grid>
@@ -75,13 +75,13 @@ export default function Footer() {
           <Typography variant='h6' style={{color: 'white'}}>&#9400;2019 Jonny Fluckey
           <br></br>
           <br></br>
-          Built with React <img src={ReactPic} width='10%' height='10%' style={{float: 'inline-start'}} />
+          Built with React <img src={ReactPic} width='10%' height='10%' style={{float: 'unset'}} />
           <br></br>
           <br></br>
-          Styled with Material-UI &nbsp; &nbsp; <img src={MaterialLogo} width='5%' height='5%' style={{float: 'inline-start'}}/>
+          Styled with Material-UI &nbsp; &nbsp; <img src={MaterialLogo} width='5%' height='5%' style={{float: 'unset'}}/>
           <br></br>
           <br></br>
-          Blog Powered by: &nbsp; &nbsp; <img src='https://cdn.buttercms.com/RyJ7UhcVTCRqrCFXwgCo' width='25%' height='25%' style={{float: 'inline-start'}}/>
+          Blog Powered by: &nbsp; &nbsp; <img src='https://cdn.buttercms.com/RyJ7UhcVTCRqrCFXwgCo' width='25%' height='25%' style={{float: 'unset'}}/>
           </Typography>
           </Grid>
           {/* <Grid item xs={2} style={{borderLeft: '4px solid white', height: '200px'}}></Grid>
