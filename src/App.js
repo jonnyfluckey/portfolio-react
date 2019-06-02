@@ -35,12 +35,12 @@ const theme = createMuiTheme({
 
 class App extends Component {
 
-initializeReactGA = () => {
-    ReactGA.initialize('UA-140679342-1');
-    ReactGA.pageview('/homepage');
-}
+// initializeReactGA = () => {
+//   ReactGA.pageview('/homepage');
+// }
 
-  render() {
+render() {
+  ReactGA.initialize('UA-140679342-1');
     return (
       <>
       <MuiThemeProvider theme={theme}>
