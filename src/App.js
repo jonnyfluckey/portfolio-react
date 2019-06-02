@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ReactGA from 'react-ga';
 import {BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory'; 
 import ResponsiveDrawer from './Components/Shared/ResponsiveDrawer';
 import BottomNavigation from './Components/Shared/BottomNavigation';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -32,18 +33,25 @@ const theme = createMuiTheme({
   },
 });
 
+const history = createHistory()
+history.listen(location => {
+	ReactGA.set({ page: location.pathname })
+	ReactGA.pageview(location.pathname)
+})
 
 class App extends Component {
 
+componentDidMount = () => {
+		ReactGA.pageview(window.location.pathname)
+	}
 
 render() {
-  ReactGA.initialize('UA-140679342-1');
-  ReactGA.pageview('/homepage');
+  
     return (
       <>
       <MuiThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
+      <Router history={history}>
       <div>
       <ResponsiveDrawer  />
         <Switch>
