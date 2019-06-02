@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import ReactGA from 'react-ga';
-import {BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
-import createHistory from 'history/createBrowserHistory'; 
+import GA from './Extras/GoogleAnalytics';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ResponsiveDrawer from './Components/Shared/ResponsiveDrawer';
 import BottomNavigation from './Components/Shared/BottomNavigation';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -33,17 +32,8 @@ const theme = createMuiTheme({
   },
 });
 
-const history = createHistory()
-history.listen(location => {
-	ReactGA.set({ page: location.pathname })
-	ReactGA.pageview(location.pathname)
-})
 
 class App extends Component {
-
-componentDidMount = () => {
-		ReactGA.pageview(window.location.pathname)
-	}
 
 render() {
   
@@ -51,7 +41,8 @@ render() {
       <>
       <MuiThemeProvider theme={theme}>
       <CssBaseline />
-      <Router history={history}>
+      <Router>
+      { GA.init() && <GA.RouteTracker /> }
       <div>
       <ResponsiveDrawer  />
         <Switch>
