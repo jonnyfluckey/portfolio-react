@@ -12,7 +12,8 @@ import Public from '@material-ui/icons/Public';
 import PhoneInTalk from '@material-ui/icons/PhoneInTalk';
 import {Link} from 'react-router-dom';
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery';
-
+import Fab from '@material-ui/core/Fab';
+import NavigationIcon from '@material-ui/icons/Navigation';
 
 
 export default function Home() {
@@ -60,6 +61,13 @@ export default function Home() {
   return (
     <>
     <HomeContainer>
+      <Fab color='secondary' variant='extended' disabled={true}
+      style={{position: 'fixed', zIndex: '1', marginTop: '5%', marginLeft: '60%'}}>
+      {/* <NavigationIcon />
+      &nbsp;  */}
+      {/* Click or  */}
+      Scroll to Continue
+      </Fab>
       <Grid style={{marginTop: '100px'}} 
       container 
       spacing={24}
@@ -97,7 +105,7 @@ export default function Home() {
         <Grid item xs={12} align='center'>
         <img src={Divider} />
         </Grid>
-        <Grid item xs={4} align='center' style={{marginTop: '250px'}} id="next">
+        <Grid item xs={4} align='center' style={{marginTop: '250px'}}>
         <ScrollAnimation animateIn='zoomInUp' animateOut='zoomOutDown'>
         <img src='https://upload.wikimedia.org/wikipedia/commons/6/65/Utah_Jazz_wordmark_logo_primary_color.png' alt='Utah Jazz Logo' height='65%' width='65%' />
         </ScrollAnimation>
