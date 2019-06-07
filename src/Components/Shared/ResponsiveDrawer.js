@@ -120,7 +120,7 @@ class PersistentDrawerLeft extends React.Component {
             >
               <MenuIcon />
             </IconButton>
-              <Typography variant="h6" color="inherit" noWrap style={{marginInlineStart: '75%'}}>
+              <Typography variant="h6" color="inherit" noWrap >
               <Link to='///www.github.com/jonnyfluckey/portfolio-react' target='_blank' style={{textDecoration: 'none', color: 'white'}}>
                 Site Source Code
                 </Link>
