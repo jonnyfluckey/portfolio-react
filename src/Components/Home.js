@@ -169,9 +169,6 @@ export default function Home() {
         <Grid item xs={12} align='center'>
         <img src={Divider} />
         </Grid>
-        {/* <br></br>
-        <br></br>
-        <br></br> */}
         <Grid item xs={12} style={{marginTop: '200px'}} align='center'>
         <ScrollAnimation animateIn='rollIn' animateOut='rollOut'>
         <Typography variant='h4'>
@@ -230,7 +227,7 @@ export default function Home() {
                 <Typography variant='h6' align='center'>Command Line</Typography>
                 </TableCell>
                 <TableCell>
-                <Typography variant='h6' align='center'>jQuery</Typography>
+                <Typography variant='h6' align='center'>Python</Typography>
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -241,7 +238,7 @@ export default function Home() {
                 <Typography variant='h6' align='center'>Redux</Typography>
                 </TableCell>
                 <TableCell>
-                <Typography variant='h6' align='center'>Flux</Typography>
+                <Typography variant='h6' align='center'>Django</Typography>
                 </TableCell>
               </TableRow>
               <TableRow>
@@ -274,7 +271,7 @@ export default function Home() {
                 <Typography variant='h6' align='center'>Netlify</Typography>
                 </TableCell>
                 <TableCell>
-                <Typography variant='h6' align='center'>Azure</Typography>
+                <Typography variant='h6' align='center'>AWS</Typography>
                 </TableCell>
               </TableRow>
             </TableBody>
@@ -477,7 +474,7 @@ export default function Home() {
                   <Typography variant='body1' align='center'>Redux</Typography>
                   </TableCell>
                   <TableCell>
-                  <Typography variant='body1' align='center'>Flux</Typography>
+                  <Typography variant='body1' align='center'>Django</Typography>
                   </TableCell>
                   </TableRow>
                   <TableRow>
@@ -490,7 +487,7 @@ export default function Home() {
                   </TableRow>
                   <TableRow>
                   <TableCell>
-                  <Typography variant='body1' align='center'>Azure</Typography>
+                  <Typography variant='body1' align='center'>AWS</Typography>
                   </TableCell>
                   <TableCell>
                   <Typography variant='body1' align='center'>SQL</Typography>
@@ -501,7 +498,7 @@ export default function Home() {
                   <Typography variant='body1' align='center'>Command Line</Typography>
                   </TableCell>
                   <TableCell>
-                  <Typography variant='body1' align='center'>jQuery</Typography>
+                  <Typography variant='body1' align='center'>Python</Typography>
                   </TableCell>
                   </TableRow>
                   <TableRow>
