@@ -125,8 +125,8 @@ if (screenSize === true) {
     <HomeContainer>
       <Helmet>
         <title>{post.seo_title}</title>
-        <meta property='description' content={post.meta_description} />
-        <meta property='og:image' content={post.featured_image} />
+        <meta property="og:description" content={post.meta_description} />
+        <meta property="og:image" content={post.featured_image} />
         <meta property="og:title" content={post.seo_title} />
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=314968622768611&autoLogAppEvents=1"></script>
         {/* <!-- Go to www.addthis.com/dashboard to customize your tools --> */}
@@ -165,8 +165,9 @@ if (screenSize === true) {
     <HomeMobileContainer>
       <Helmet>
         <title>{post.seo_title}</title>
-        <meta name='description' content={post.meta_description} />
-        <meta name='og:image' content={post.featured_image} />
+        <meta property="og:description" content={post.meta_description} />
+        <meta property="og:image" content={post.featured_image} />
+        <meta property="og:title" content={post.seo_title} />
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=314968622768611&autoLogAppEvents=1"></script>
         {/* <!-- Go to www.addthis.com/dashboard to customize your tools --> */}
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cecb1f5757f0a83"></script>
