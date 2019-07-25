@@ -23,10 +23,12 @@ export default function BlogPost(props) {
       setData(resp.data)
     }
     fetchData();
-    Prism.highlightAll();
-  }, [],
+  }, []
   )
-
+  
+  useEffect(() => {
+    Prism.highlightAll();
+  })
 
   const HomeContainer = styled.div`
       background-color: #AEB1BF;
