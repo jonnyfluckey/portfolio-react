@@ -97,7 +97,7 @@ if (screenSize === true) {
       <Typography variant='h6'>Comments are Welcome Below<br></br>or<br></br></Typography>
       <Link to ='/blog' style={{textDecoration: 'none'}}><Typography variant='h6'>Return Back to Blog</Typography></Link>
       <br></br>
-      <div class="fb-comments" data-href="https://www.jonnyfluckey.com" data-width="600" data-numposts="5"></div>
+      <div class="fb-comments" data-href={`https://www.jonnyfluckey.com/blog/posts/${post.slug}`} data-width="600" data-numposts="5"></div>
       </div>  
     </HomeContainer>
     <Footer />
@@ -138,7 +138,7 @@ if (screenSize === true) {
       <Typography variant='subtitle1'>Comments are Welcome Below<br></br>or<br></br></Typography>
       <Link to ='/blog' style={{textDecoration: 'none'}}><Typography variant='subtitle1'><strong>Return Back to Blog</strong></Typography></Link>
       <br></br>
-      <div class="fb-comments" data-href="https://www.jonnyfluckey.com" data-width="600" data-numposts="5"></div>
+      <div class="fb-comments" data-href={`https://www.jonnyfluckey.com/blog/posts/${post.slug}`} data-width="50%" data-numposts="5"></div>
       </div>
     </HomeMobileContainer>
     <Footer />

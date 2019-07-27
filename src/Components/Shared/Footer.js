@@ -27,9 +27,6 @@ export default function Footer() {
     <Grid 
     container
     spacing={24}
-    // alignContent='left'
-    // justify='left'
-    // alignItems='left'
     >
     <Grid item xs={5}>
     <Typography variant='h6' style={{color: 'white'}}>&#9400;2019 Jonny Fluckey
@@ -69,12 +66,11 @@ export default function Footer() {
           <Grid 
           container
           spacing={24}
-          // alignContent='left'
-          // justify='left'
-          // alignItems='left'
           >
           <Grid item xs={12}>
           <Typography variant='h6' style={{color: 'white'}}>&#9400;2019 Jonny Fluckey
+          <br></br>
+          <a href="https://www.iubenda.com/privacy-policy/20510818" target='_blank' style={{textDecoration: 'none'}}>Privacy Policy</a>
           <br></br>
           <br></br>
           Built with React <img src={ReactPic} width='10%' height='10%' style={{float: 'unset'}} />
@@ -85,12 +81,7 @@ export default function Footer() {
           <br></br>
           Blog Powered by: &nbsp; &nbsp; <img src='https://cdn.buttercms.com/RyJ7UhcVTCRqrCFXwgCo' width='25%' height='25%' style={{float: 'unset'}}/>
           </Typography>
-          </Grid>
-          {/* <Grid item xs={2} style={{borderLeft: '4px solid white', height: '200px'}}></Grid>
-          <Grid item xs={5}>
-          <img src={Stencil} height='80%' width='50%' />
-          </Grid> */}
-       
+          </Grid>       
           </Grid>
           </footer>
       )
